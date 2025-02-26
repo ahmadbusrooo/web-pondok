@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinta Tak Bisa Dimiliki</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: 'Georgia', serif;
+      color: #333;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    #message {
+      font-size: 26px;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      margin: 20px;
+      line-height: 1.5;
+      animation: appear 1s ease-in-out forwards;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-out {
+      animation: fadeOut 3s forwards;
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 14px;
+      color: #ffffff;
+      opacity: 0.8;
+    }
+
+    /* Decorative animated hearts */
+    .heart {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: #ff6b6b;
+      border-radius: 50%;
+      animation: floatUp 4s infinite ease-in-out;
+    }
+
+    .heart:before, .heart:after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: #ff6b6b;
+      border-radius: 50%;
+    }
+
+    .heart:before {
+      top: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .heart:after {
+      left: -7px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-150px) scale(0.8);
+        opacity: 0;
+      }
+    }
+
+    .heart:nth-child(2) {
+      left: 20%;
+      animation-delay: 0.5s;
+    }
+
+    .heart:nth-child(3) {
+      left: 50%;
+      animation-delay: 1s;
+    }
+
+    .heart:nth-child(4) {
+      left: 80%;
+      animation-delay: 1.5s;
+    }
+  </style>
+</head>
+<body>
+  <div id="message"></div>
+
+  <footer>Created with ❤️</footer>
+
+  <!-- Decorative floating hearts -->
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+
+  <script>
+    const message = "Saya sangat mencintaimu, tapi saya tidak bisa memilikimu.";
+    const messageElement = document.getElementById("message");
+
+    let index = 0;
+
+    function typeMessage() {
+      if (index < message.length) {
+        messageElement.innerHTML += message.charAt(index);
+        index++;
+        setTimeout(typeMessage, 100);
+      } else {
+        setTimeout(() => {
+          messageElement.classList.add("fade-out");
+        }, 3000);
+      }
+    }
+
+    typeMessage();
+  </script>
+</body>
+</html>

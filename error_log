@@ -1,0 +1,11 @@
+[28-Mar-2024 18:56:43 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2204
+[04-Apr-2024 19:58:03 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2204
+[09-Apr-2024 23:12:53 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2235
+[11-Apr-2024 19:21:19 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2235
+[18-Apr-2024 17:59:21 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2235
+[25-Apr-2024 18:06:19 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2235
+[02-May-2024 17:56:38 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2235
+[07-May-2024 20:54:17 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2235
+[09-May-2024 18:07:07 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2235
+[16-May-2024 18:02:29 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2235
+[23-May-2024 17:53:25 UTC] PHP Warning:  fileperms(): stat failed for /home/ppalmaru/public_html/index.php in /home/ppalmaru/public_html/wp-admin/includes/file.php on line 2235
